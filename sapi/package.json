@@ -3,7 +3,8 @@
     "sapi": "dist/index.js"
   },
   "type": "module",
-  "name": "sapi",
+  "name": "@Jorjon/sapi",
+  "repository": "Jorjon/sapi",
   "version": "1.0.0",
   "description": "AWS Lambda powered API framework.",
   "exports": "dist/index.js",
