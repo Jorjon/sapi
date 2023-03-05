@@ -76,8 +76,6 @@ export default async function up() {
     log(error);
   }
 
-  await new Promise((resolve) => setTimeout(resolve, 1000));
-
   const TIMEOUT = 5000;
   const [success, lastResponse] = await waitForFunctionUpdate(
     client,
