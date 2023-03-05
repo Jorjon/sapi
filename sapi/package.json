@@ -1,0 +1,41 @@
+{
+  "bin": {
+    "sapi": "dist/index.js"
+  },
+  "type": "module",
+  "name": "sapi",
+  "version": "1.0.0",
+  "description": "AWS Lambda powered API framework.",
+  "exports": "dist/index.js",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "build": "run-s build:clean build:copy-handler build:build",
+    "build:clean:clean": "rimraf ./dist",
+    "build:clean:create-folder": "mkdir -p ./dist",
+    "build:clean": "run-s build:clean:clean build:clean:create-folder",
+    "build:copy-handler": "cp ./src/build/__handler__.mjs ./dist/__handler__.mjs",
+    "build:build": "tsup-node src/index.ts --format esm",
+    "build:watch": "tsup-node src/index.ts --format esm --watch",
+    "dev": "run-s build:clean build:copy-handler build:watch"
+  },
+  "author": "Jorjon",
+  "license": "MIT",
+  "devDependencies": {
+    "@aws-sdk/client-lambda": "^3.282.0",
+    "@types/aws-lambda": "^8.10.111",
+    "@types/node": "^18.14.6",
+    "dotenv": "^16.0.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.4",
+    "rimraf": "^4.3.0",
+    "tsup": "^6.6.3",
+    "tsx": "^3.12.3"
+  },
+  "dependencies": {
+    "archiver": "^5.3.1",
+    "chalk": "^5.2.0",
+    "esbuild": "^0.17.11"
+  }
+}

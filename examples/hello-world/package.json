@@ -1,0 +1,14 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "sapi build ./src",
+    "up": "sapi up ./src"
+  },
+  "author": "Jorjon",
+  "license": "MIT",
+  "dependencies": {
+    "sapi": "file:../../sapi"
+  }
+}
