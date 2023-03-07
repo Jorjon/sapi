@@ -7,6 +7,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    working-directory: ./sapi
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -18,6 +19,7 @@ jobs:
   publish-gpr:
     needs: build
     runs-on: ubuntu-latest
+    working-directory: ./sapi
     permissions:
       packages: write
       contents: read
