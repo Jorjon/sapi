@@ -5,7 +5,7 @@
   "type": "module",
   "name": "@Jorjon/sapi",
   "repository": "Jorjon/sapi",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "AWS Lambda powered API framework.",
   "exports": "dist/index.js",
   "engines": {
@@ -24,7 +24,6 @@
   "author": "Jorjon",
   "license": "MIT",
   "devDependencies": {
-    "@aws-sdk/client-lambda": "^3.282.0",
     "@types/aws-lambda": "^8.10.111",
     "@types/node": "^18.14.6",
     "npm-run-all": "^4.1.5",
@@ -34,6 +33,7 @@
     "tsx": "^3.12.3"
   },
   "dependencies": {
+    "@aws-sdk/client-lambda": "^3.282.0",
     "dotenv": "^16.0.3",
     "archiver": "^5.3.1",
     "chalk": "^5.2.0",
