@@ -19,7 +19,12 @@ A code-as-configuration tool like Pulumi or Terraform are good, but you end up h
 
 ## What
 
-This framework is meant to be a simple way to create an API using AWS Lambda.
+This framework is meant to be a simple way to create an API using AWS Lambda and NodeJs.
+
+## How to run
+You need to provision your AWS Lambda Function with URL first. Then, you specify the name of the function in the `SAPI_NAME` environment variable.
+
+**Important**: The handler for the function must be `__handler__.default`.
 
 ```shell
 npm i -D sapi
@@ -96,6 +101,7 @@ $ curl https://YYY.lambda-url.XXX.on.aws/hello-world
 - Only Node runtime is supported.
 - There's no API Gateway support, and it's not planned. Only AWS Lambda with functions URLs.
 - No function creation at the present, only updating an existing function.
+- No support for layers.
 
 ## Roadmap
 
