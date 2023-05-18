@@ -10,7 +10,7 @@ export default async function handler(event, context) {
     };
   }
 
-  const response = await methodToExecuteHandler();
+  const response = await methodToExecuteHandler(event, context);
 
   return {
     statusCode: response.statusCode,
