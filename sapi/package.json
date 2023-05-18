@@ -5,7 +5,7 @@
   "type": "module",
   "name": "@Jorjon/sapi",
   "repository": "Jorjon/sapi",
-  "version": "1.0.4",
+  "version": "1.0.8",
   "description": "AWS Lambda powered API framework.",
   "exports": "dist/index.js",
   "engines": {
