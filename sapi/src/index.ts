@@ -7,10 +7,10 @@ import dotenv from "dotenv";
 dotenv.config();
 
 if (process.env.SAPI_NAME == null || process.env.SAPI_AWS_REGION == null) {
-  log(
+  throw new Error(
     chalk.red("SAPI_NAME or SAPI_AWS_REGION env not set. Please read README.md")
   );
-  process.exit();
+  process.exit(1);
 }
 
 log("SAPI Environment variables:");
