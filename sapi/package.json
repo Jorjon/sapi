@@ -30,7 +30,7 @@
     "prettier": "^2.8.4",
     "rimraf": "^4.3.0",
     "tsup": "^6.6.3",
-    "tsx": "^3.12.3"
+    "tsx": "^4.0.0"
   },
   "dependencies": {
     "@aws-sdk/client-lambda": "^3.282.0",
