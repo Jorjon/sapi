@@ -27,7 +27,7 @@
     "@types/aws-lambda": "^8.10.111",
     "@types/node": "^22.0.0",
     "npm-run-all2": "^5.0.0",
-    "prettier": "^2.8.4",
+    "prettier": "^3.0.0",
     "rimraf": "^4.3.0",
     "tsup": "^8.0.0",
     "tsx": "^4.0.0"
